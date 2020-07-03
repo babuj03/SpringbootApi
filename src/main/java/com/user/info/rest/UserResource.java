@@ -32,7 +32,7 @@ public class UserResource {
      * {@code GET /users} : get all users.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body all users.
      */
-	 @CrossOrigin(origins = "https://userapi-springboot.herokuapp.com/")
+	 @CrossOrigin(origins = "*")
 	 @GetMapping("/users")
     public ResponseEntity<List<UserDTO>> getAllUsers() {
         final List<UserDTO> users = userService.users();
