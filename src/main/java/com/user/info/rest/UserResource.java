@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = "https://userapi-springboot.herokuapp.com/")
+@CrossOrigin(origins = "*")
 public class UserResource {
     private final Logger log = LoggerFactory.getLogger(UserResource.class);
 
