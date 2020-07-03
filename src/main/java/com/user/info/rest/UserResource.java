@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = "https://c3m4z.csb.app")
 public class UserResource {
     private final Logger log = LoggerFactory.getLogger(UserResource.class);
 
@@ -32,7 +31,7 @@ public class UserResource {
      * {@code GET /users} : get all users.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body all users.
      */
-	 @CrossOrigin(origins = "https://c3m4z.csb.app")
+	
 	 @GetMapping("/users")
     public ResponseEntity<List<UserDTO>> getAllUsers() {
         final List<UserDTO> users = userService.users();
